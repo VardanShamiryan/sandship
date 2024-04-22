@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "e5e997d4-3732-4806-8260-37b17336cba0",
+		"name": "SandShip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20670232"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"AAA\",\r\n    \"surname\": \"BBB\",\r\n    \"email\": \"asaa@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Material Type",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ironaaa\",\r\n    \"description\": \"Irons\",\r\n    \"iconPath\": \"folder\",\r\n    \"maxCapacity\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/material-types"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Material",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Abcd\",\r\n    \"materialTypeDto\": {\r\n        \"id\": \"4c256f0d-ccad-4a67-a3e0-d1a0985e82e3\",\r\n        \"name\": \"Ironaaa\",\r\n        \"description\": \"Irons\",\r\n        \"iconPath\": \"folder\",\r\n        \"maxCapacity\": 100\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/materials"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Materials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/materials"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Material Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/material-types"
+			},
+			"response": []
+		},
+		{
+			"name": "Create warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"store2\",\r\n    \"owner\": {\r\n        \"id\":\"9f9a87cd-de2f-4be7-9109-644b21895999\",\r\n        \"name\": \"AAA\",\r\n        \"surname\": \"BBB\",\r\n        \"email\": \"asaa@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/warehouse"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all warehousies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"store2\",\r\n    \"owner\": {\r\n        \"id\":\"9f9a87cd-de2f-4be7-9109-644b21895999\",\r\n        \"name\": \"AAA\",\r\n        \"surname\": \"BBB\",\r\n        \"email\": \"asaa@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/warehouse"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Material To Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"store2\",\r\n    \"owner\": {\r\n        \"id\":\"9f9a87cd-de2f-4be7-9109-644b21895999\",\r\n        \"name\": \"AAA\",\r\n        \"surname\": \"BBB\",\r\n        \"email\": \"asaa@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/warehouse"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Material from Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"store2\",\r\n    \"owner\": {\r\n        \"id\":\"9f9a87cd-de2f-4be7-9109-644b21895999\",\r\n        \"name\": \"AAA\",\r\n        \"surname\": \"BBB\",\r\n        \"email\": \"asaa@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/warehouse"
+			},
+			"response": []
+		},
+		{
+			"name": "Move Material beetven  Store Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"store2\",\r\n    \"owner\": {\r\n        \"id\":\"9f9a87cd-de2f-4be7-9109-644b21895999\",\r\n        \"name\": \"AAA\",\r\n        \"surname\": \"BBB\",\r\n        \"email\": \"asaa@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/warehouse"
+			},
+			"response": []
+		}
+	]
+}
